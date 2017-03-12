@@ -1,0 +1,295 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F47925C5-480E-46C8-9ECD-C2BE5A12954A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UBAHBANK</RootNamespace>
+    <AssemblyName>UBAHBANK</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v15.1.Core, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v15.1, Version=15.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Formlar\frmAnamenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmAnamenu.Designer.cs">
+      <DependentUpon>frmAnamenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmAnlasmalibank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmAnlasmalibank.Designer.cs">
+      <DependentUpon>frmAnlasmalibank.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmBagis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmBagis.Designer.cs">
+      <DependentUpon>frmBagis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmBakiye.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmBakiye.Designer.cs">
+      <DependentUpon>frmBakiye.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmBankabilgilerics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmBankabilgilerics.Designer.cs">
+      <DependentUpon>frmBankabilgilerics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmBireyselkredi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmBireyselkredi.Designer.cs">
+      <DependentUpon>frmBireyselkredi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmDiger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmDiger.Designer.cs">
+      <DependentUpon>frmDiger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmDigerpostaceki.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmDigerpostaceki.Designer.cs">
+      <DependentUpon>frmDigerpostaceki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmFatura.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmFatura.Designer.cs">
+      <DependentUpon>frmFatura.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmFaturaode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmFaturaode.Designer.cs">
+      <DependentUpon>frmFaturaode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmFaturasorgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmFaturasorgu.Designer.cs">
+      <DependentUpon>frmFaturasorgu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmGiris.Designer.cs">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmGSMTLYukleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmGSMTLYukleme.Designer.cs">
+      <DependentUpon>frmGSMTLYukleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmHesaphareket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmHesaphareket.Designer.cs">
+      <DependentUpon>frmHesaphareket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmKredikartborcu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmKredikartborcu.Designer.cs">
+      <DependentUpon>frmKredikartborcu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmParaaktarma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmParaaktarma.Designer.cs">
+      <DependentUpon>frmParaaktarma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmParacek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmParacek.Designer.cs">
+      <DependentUpon>frmParacek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmParacekdiger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmParacekdiger.Designer.cs">
+      <DependentUpon>frmParacekdiger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmSifredegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmSifredegistir.Designer.cs">
+      <DependentUpon>frmSifredegistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmTelefonguncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmTelefonguncelle.Designer.cs">
+      <DependentUpon>frmTelefonguncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmTLyukle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmTLyukle.Designer.cs">
+      <DependentUpon>frmTLyukle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formlar\frmServisdisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formlar\frmServisdisi.Designer.cs">
+      <DependentUpon>frmServisdisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sınıflar\duzenleyici.cs" />
+    <Compile Include="Sınıflar\VTBaglanti.cs" />
+    <EmbeddedResource Include="Formlar\frmAnamenu.resx">
+      <DependentUpon>frmAnamenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmAnlasmalibank.resx">
+      <DependentUpon>frmAnlasmalibank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmBagis.resx">
+      <DependentUpon>frmBagis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmBakiye.resx">
+      <DependentUpon>frmBakiye.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmBankabilgilerics.resx">
+      <DependentUpon>frmBankabilgilerics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmBireyselkredi.resx">
+      <DependentUpon>frmBireyselkredi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmDiger.resx">
+      <DependentUpon>frmDiger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmDigerpostaceki.resx">
+      <DependentUpon>frmDigerpostaceki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmFatura.resx">
+      <DependentUpon>frmFatura.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmFaturaode.resx">
+      <DependentUpon>frmFaturaode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmFaturasorgu.resx">
+      <DependentUpon>frmFaturasorgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmGiris.resx">
+      <DependentUpon>frmGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmGSMTLYukleme.resx">
+      <DependentUpon>frmGSMTLYukleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmHesaphareket.resx">
+      <DependentUpon>frmHesaphareket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmKredikartborcu.resx">
+      <DependentUpon>frmKredikartborcu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmParaaktarma.resx">
+      <DependentUpon>frmParaaktarma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmParacek.resx">
+      <DependentUpon>frmParacek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmParacekdiger.resx">
+      <DependentUpon>frmParacekdiger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmSifredegistir.resx">
+      <DependentUpon>frmSifredegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmTelefonguncelle.resx">
+      <DependentUpon>frmTelefonguncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmTLyukle.resx">
+      <DependentUpon>frmTLyukle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formlar\frmServisdisi.resx">
+      <DependentUpon>frmServisdisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ubah_background.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
